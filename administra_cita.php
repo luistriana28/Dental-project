@@ -12,7 +12,7 @@ else
 ?>
 <html>
 <head>
-<title>Edita Cita</title>
+<title>Editar Cita</title>
 </head>
 <body>
 <center>
