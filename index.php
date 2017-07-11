@@ -8,12 +8,12 @@
     <body>
         <center><h1 id="Titulo">DENTAL TORREÓN </h1></center>
         <center>
-        <div id="diente">
+        <div id="diente" >
             <br /><br /><br />
             <fieldset id="feel">
                 <form method="post" action="verificamedicos.php">
-                    <span>Usuario: </span><input class="form-group" type="text" name="user" /><br />
-                    <span>Password: </span><input class="form-group" type="password" name="pass" />
+                    <span  class="form-control">Usuarios: </span><input class="form-group" type="text" name="user" /><br />
+                    <span  class="form-control">Password: </span><input class="form-group" type="password" name="pass" />
                     <input type="submit" value="Entrar" id="input"/>
                 </form>
             </fieldset>
