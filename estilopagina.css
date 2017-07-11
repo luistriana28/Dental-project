@@ -1,0 +1,40 @@
+ body{
+         background-image: url("img/azul.JPG");
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+        }
+        #input[type=submit]:hover {
+        cursor: pointer;
+        background: #000040;
+        color: white;
+        }
+        #tit{
+        color: white;
+        font-family: Baskerrille Old Face;
+        }
+        #div2{
+        width: 1000px;
+        height: 40px;
+        }
+        #Titulo{
+        color: white;
+        font-family: Baskerrille Old Face;
+        font-size: 62px;
+        width: 593px;
+        height: 83px;
+        }
+        #input[type=submit]:hover {
+        cursor: pointer;
+        background: #000040;
+        color: white;
+        }
+        #feel{
+        width: 200px;
+        height: 135px;
+        background: #88C4FF;
+        }
+        #diente{
+        background: url('img/diente.png') no-repeat;
+        height: 555px;
+        width: 375px;
+        }
