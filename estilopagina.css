@@ -1,11 +1,11 @@
- body{
-         background-image: url("img/azul.JPG");
+body{
+         background-image: url("img/cielo.JPG");
          background-repeat: no-repeat;
          background-attachment: fixed;
         }
-        #input[type=submit]:hover {
+        #input{
         cursor: pointer;
-        background: #000040;
+        background: #5E33FF;
         color: white;
         }
         #tit{
@@ -23,11 +23,7 @@
         width: 593px;
         height: 83px;
         }
-        #input[type=submit]:hover {
-        cursor: pointer;
-        background: #000040;
-        color: white;
-        }
+      
         #feel{
         width: 200px;
         height: 135px;
@@ -38,3 +34,72 @@
         height: 555px;
         width: 375px;
         }
+             
+        #M{
+        color: white;
+        }
+        #Menu{
+        width: 20px;
+        margin-top: 50px;
+        }
+        #menu ul{
+        list-style: none;
+        }
+        #menu ul li{
+        margin-top: 15px;
+        font-family: tahoma;
+        font-size: 10px;
+        background:  white;
+        width: 160px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 0px 20px 20px 0px;
+        padding-left: 10px;
+        box-shadow: 10px 5px 15px #FFFF8A;
+        -wedkit-transition: padding-left 0.5s;
+        }
+        #menu ul li:hover{
+        padding: 15px;
+        
+        }
+        <style>
+        body{
+        background: url('img/log1.JPG');
+        }
+        #M{
+        color: white;
+        }
+        #Menu{
+        width: 20px;
+        margin-top: 50px;
+        }
+        #menu ul{
+        list-style: none;
+        }
+        #menu ul li{
+        margin-top: 15px;
+        font-family: tahoma;
+        font-size: 10px;
+        background:  white;
+        width: 160px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 0px 20px 20px 0px;
+        padding-left: 10px;
+        box-shadow: 10px 5px 15px #FFFF8A;
+        -wedkit-transition: padding-left 0.5s;
+        }
+        #menu ul li:hover{
+        padding: 15px;
+        
+        }
+        #letras{
+        color: white;
+        }
+        </style>
+        #letras
+    {
+    color: white;
+    font-family: Baskerrille Old Face;
+    font-size: 20px;
+    }

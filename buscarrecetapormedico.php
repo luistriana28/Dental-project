@@ -3,6 +3,7 @@
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
     </head>
     <body>
         <?php
@@ -75,31 +76,6 @@
     <br />
     <img src="img/dientelimpio.png"/><br />
     <a href="buscar.php">Regresar</font></a>
-    <style>
-    body{
-    background: url('img/log1.JPG');
     
-    }
-    #letras
-    {
-    color: white;
-    font-family: Baskerrille Old Face;
-    font-size: 20px;
-    }
-    #input[type=submit]:hover {
-    cursor: pointer;
-    background: #000040;
-    color: white;
-    }
-    #feel{
-    width: 425px;
-    height: 150px;
-    background: #1E1E1E;
-    }
-    #tit{
-    color: white;
-    font-family: Baskerrille Old Face;
-    }
-    </style>
 </body>
 </html>

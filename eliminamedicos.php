@@ -15,6 +15,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
     </head>
     <body>
         <center><h1 id="tit">Eliminar Medico</h1></center>
@@ -73,31 +74,6 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
     <img src="img/dientelimpio.png"/><br />
     <a href="Eliminar.php">Regresar</a></center>
     <br />
-    <style>
-    body{
-    background-image:url('img/log1.JPG');
     
-    }
-    #letras
-    {
-    color: black;
-    font-family: Baskerrille Old Face;
-    font-size: 20px;
-    }
-    #input[type=submit]:hover {
-    cursor: pointer;
-    background: #000040;
-    color: white;
-    }
-    #feel{
-    width: 425px;
-    height: 120px;
-    background: #88C4FF;
-    }
-    #tit{
-    color: white;
-    font-family: Baskerrille Old Face;
-    }
-    </style>
 </body>
 </html>

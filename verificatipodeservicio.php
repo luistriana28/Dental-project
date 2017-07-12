@@ -13,9 +13,13 @@ else
 <html>
 <head>
 <title>ALTA Tipo de Servicio</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/query/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
 </head>
 
-<body background="img/log1.JPG">
+<body>
 <?php
 $nombre_servicio=$_POST['nombre'];
 $conexion=mysqli_connect("localhost","root")or die("Problemas de conexion");
