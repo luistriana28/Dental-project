@@ -15,12 +15,13 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
     </head>
     <body>
         <center><h1 id="tit">Alta Cita</h1>
         <fieldset id="feel">
             <form method="post" action="verificaaltacitas.php">
-                <font id="letras">Cita AAAA-MM-DD: </font><input name="fecha" type="text" maxlength="12" /><br />
+                <font id="letras"><strong>Cita AAAA-MM-DD: </font><input name="fecha" type="text" maxlength="12" /><br />
                 <font id="letras">Nombre de Paciente:</font>
                 <?php
                 $conexion=mysqli_connect("localhost","root") or die("Problemas de conexion");
@@ -49,7 +50,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
                     }
                 echo "</select><br/>";
                 ?>
-                <font id="letras">Tipo de Servicio:</font>
+                <font id="letras">Tipo de Servicio: </strong></font>
                 <?php
                 $conexion=mysqli_connect("localhost","root") or die("Problemas de conexion");
                 mysqli_select_db($conexion,"dentaltorreon") or die ("Problemas de conexion de la base de datos");
@@ -62,36 +63,16 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
                     }
                 echo "</select><br/>";
                 ?>
-                <input type="submit" value="Registrar" id="input"/>
+                 <br />
+             <br />
+                <input type="submit" value="Registrar" id="input"/ class="btn btn-info btn-lg">
             </form></fieldset>
             <br />
+             <br />
+              <br />
+             <br />
             <img src="img/dientelimpio.png"/><br />
             <a href="registrar.php">Regresar</a></center>
-            <style>
-            body{
-            background-image:url('img/log1.JPG');
             
-            }
-            #letras
-            {
-            color: black;
-            font-family: Baskerrille Old Face;
-            font-size: 20px;
-            }
-            #input[type=submit]:hover {
-            cursor: pointer;
-            background: #000040;
-            color: white;
-            }
-            #feel{
-            width: 425px;
-            height: 150px;
-            background: #88C4FF;
-            }
-            #tit{
-            color: white;
-            font-family: Baskerrille Old Face;
-            }
-            </style>
         </body>
     </html>

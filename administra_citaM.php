@@ -15,6 +15,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilopagina.css">
     </head>
     <body>
         <center>
@@ -33,20 +34,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
     echo "</table>";
     ?>
     </center>
-    <style>
-    body{
-    background: url('img/log1.jpg');
-    }
-    #input[type=submit]:hover {
-    cursor: pointer;
-    background: #000040;
-    color: white;
-    }
-    #tit{
-    color: white;
-    font-family: Baskerrille Old Face;
-    }
-    </style>
+    
     <br />
     <center><img src="img/dientelimpio.png"/><br />
     <a href="EditarM.php">Regresar</a></center>

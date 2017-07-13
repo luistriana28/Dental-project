@@ -1,6 +1,10 @@
 <html>
 <head>
 <title>EDICION TRATAMIENTO</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/query/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
 </head>
 <body>
 <?php
@@ -15,10 +19,6 @@ echo "<font color='white'>El Tratamiento fue modificado con exito.</font>";
 header('refresh:2;url=administra_tratamiento.php')
 
 ?>
-<style>
-body{
-    background: url('img/log1.JPG');
-}
-</style>
+
 </body>
 </html>

@@ -15,55 +15,22 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
     </head>
     <body>
-        <style>
-        body{
-        background: url('img/log1.JPG');
-        }
-        #M{
-        color: white;
-        }
-        #Menu{
-        width: 20px;
-        margin-top: 50px;
-        }
-        #menu ul{
-        list-style: none;
-        }
-        #menu ul li{
-        margin-top: 15px;
-        font-family: tahoma;
-        font-size: 10px;
-        background:  white;
-        width: 160px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 0px 20px 20px 0px;
-        padding-left: 10px;
-        box-shadow: 10px 5px 15px #62B0FF;
-        -wedkit-transition: padding-left 0.5s;
-        }
-        #menu ul li:hover{
-        padding: 15px;
         
-        }
-        #letras{
-        color: white;
-        }
-        </style>
         <center><h1 id="letras">ELIMINAR</h1>
         <table>
-            <td id="menu"><ul ><li><a href="eliminamedicos.php"><font color="black">Medico</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="eliminaproveedor.php"><font color="black">Proveedor</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="eliminapacientes.php"><font color="black">Paciente</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="eliminacitas.php"><font color="black">Cita</font></a></li><br /></ul></td>
+            <td id="menu"><ul ><a href="eliminamedicos.php" class="btn btn-info btn-lg"><font color="black">Medico</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="eliminaproveedor.php" class="btn btn-info btn-lg"><font color="black">Proveedor</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="eliminapacientes.php" class="btn btn-info btn-lg"><font color="black">Paciente</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="eliminacitas.php" class="btn btn-info btn-lg"><font color="black">Cita</font></a><br /></ul></td>
         </table>
         <table>
-            <td id="menu"><ul ><li><a href="eliminaservicio.php"><font color="black">Servicio</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="eliminatratamiento.php"><font color="black">Tratamiento</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="eliminareceta.php"><font color="black">Receta</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="eliminaexpediente.php"><font color="black">Expediente</font></a></li><br /></ul></td>
+            <td id="menu"><ul ><a href="eliminaservicio.php" class="btn btn-info btn-lg"><font color="black">Servicio</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="eliminatratamiento.php" class="btn btn-info btn-lg"><font color="black">Tratamiento</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="eliminareceta.php" class="btn btn-info btn-lg"><font color="black">Receta</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="eliminaexpediente.php" class="btn btn-info btn-lg"><font color="black">Expediente</font></a><br /></ul></td>
         </table>
         <br />
         <img src="img/dientelimpio.png"/><br />

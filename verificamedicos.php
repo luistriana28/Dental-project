@@ -46,18 +46,13 @@ mysqli_close($conexion);5
 <html>
 <head>
 <title>VerificaMedico</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/query/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
 </head>
 <body>
 <center><div id="diente"></div></center>
-<style>
-body{
-    background: url(img/log1.JPG);
-}
-#diente{
-    background: url('img/diente.png') no-repeat;
-    height: 555px;
-    width: 375px;
-}
-</style>
+
 </body>
 </html>

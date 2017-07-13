@@ -1,6 +1,10 @@
 <html>
 <head>
 <title>Edita Proveedor</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/query/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
 </head>
 <body>
 <?php
@@ -15,10 +19,6 @@ mysqli_query($conexion,"update provedor
 echo "<font color='white'>El Proveedor fue modificado con exito.</font>";
 header("refresh: 2; url = administra_proveedores.php");
 ?>
-<style>
-body{
-    background: url('img/log1.JPG');
-}
-</style>
+
 </body>
 </html>

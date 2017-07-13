@@ -14,12 +14,14 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+          <link rel="stylesheet" type="text/css" href="estilopagina.css">
+
     </head>
     <body>
         <center>
         <h1 id="tit">Buscar Cita por Fecha</h1>
         <fieldset id="feel"><form method="post">
-            <font id="letras">Buscar Cita por Fecha</font>
+            <font id="letras"> <strong>Buscar Cita por Fecha </strong></font>
             <?php
             $conexion=mysqli_connect("localhost","root")
             or die("Problemas de conexion");
@@ -34,7 +36,7 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
                 }
             echo "</select><br/><br/>";
             ?>
-            <input type="submit" value="Buscar Expediente" />
+            <input type="submit" value="Buscar Expediente" class="btn btn-info btn-lg" />
         </form></fieldset></center>
         <center>
         <?php
@@ -75,31 +77,6 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
     <br />
     <img src="img/dientelimpio.png"/><br />
     <a href="buscarM.php">Regresar</font></a></center>
-    <style>
-    body{
-    background: url('img/log1.JPG');
-    
-    }
-    #letras
-    {
-    color: black;
-    font-family: Baskerrille Old Face;
-    font-size: 20px;
-    }
-    #input[type=submit]:hover {
-    cursor: pointer;
-    background: #000040;
-    color: white;
-    }
-    #feel{
-    width: 425px;
-    height: 150px;
-    background: #88C4FF;
-    }
-    #tit{
-    color: white;
-    font-family: Baskerrille Old Face;
-    }
-    </style>
+  
 </body>
 </html>
