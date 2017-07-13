@@ -1,10 +1,13 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="es" >
     <head>
         <title>Dental Torreón</title>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="estilopagina.css">
+        <meta charset="UTF-8">
     </head>
     <body>
         <center><h1 id="Titulo">DENTAL TORREÓN </h1></center>
@@ -12,7 +15,7 @@
         <div id="diente">
             <br /><br /><br />
             <fieldset id="feel">
-                <form method="post" action="verificamedicos.php">
+                <form method="post" action="accionLogin.php">
                     <span>Usuario: </span><input class="form-group" type="text" name="user" /><br />
                     <span>Password: </span><input class="form-group" type="password" name="pass" />
                     <input type="submit" value="Entrar" id="input"/>
@@ -23,3 +26,4 @@
         
     </body>
 </html>
+
