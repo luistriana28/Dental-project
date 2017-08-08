@@ -1,5 +1,5 @@
 body{
-         background-image: url("img/cielo.JPG");
+         background-image: url("../img/cielo.JPG");
          background-repeat: no-repeat;
          background-attachment: fixed;
         }
@@ -23,20 +23,12 @@ body{
         width: 593px;
         height: 83px;
         }
-      
-        #feel{
-        width: 200px;
-        height: 135px;
-        background: #88C4FF;
-        }
         #diente{
         background: url('img/diente.png') no-repeat;
         height: 555px;
         width: 375px;
         }
-               body{
-        background: url('img/log1.JPG') no-repeat;
-        }
+             
         #M{
         color: white;
         }

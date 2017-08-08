@@ -27,14 +27,14 @@
                     $_SESSION['user']=$rol;
                     //Abrir el archivo de gerente
                     echo "<center><font color='white'><h1>Bienvenido Administrador</h1></font></center>";
-                    header("refresh:1;url=Administrador.php");
+                    header("refresh:1;url=../Administrador/inicioAdministrador.php");
                 }
                 else
                 {
                     $_SESSION['user']=$rol;
                     //Abrir el archivo de gerente
                     echo "<center><font color='white'><h1>Bienvenido  ".$_SESSION['user'][0]."</h1></font></center>";
-                    header("refresh:1;url=Medicos.php"); 
+                    header("refresh:1;url=../Medicos/inicioMedicos.php"); 
                 }
             }
             else
