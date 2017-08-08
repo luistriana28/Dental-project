@@ -39,29 +39,44 @@
         </nav>
         <div class="row">
             <div class="col-xs-offset-4 col-xs-4 col-xs-offset-4">
-                <form method="post" action="">
-                    <center><h1 id="tit">Registro de Nuevo Usuario</h1>
-                    <form method="post" class="form">
-                        <div class="container-login-body">
-                            <div class="container-form">
-                                <div class="form-group">
-                                    <label><h2 class="text-center">USUARIO</h2></label>
-                                    <input name="user" class="form-control" type="text">
-                                </div>
-                                <div class="form-group">
-                                    <label><h2 class="text-center">CONTRASEÑA</h2></label>
-                                    <input name="password" class="form-control" type="password" required>
-                                </div>
-                                <div class="form-group">
-                                    <label><h2 class="text-center">CONFIRMAR CONTRASEÑA</h2></label>
-                                    <input name="cpassword" class="form-control" type="password">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <button name="btnRegistrar" class="btn btn-success" value="Registrar">Registrar</button>
+                    <form class="form-horizontal" action='' method="POST">
+                        <fieldset style="text-align: center;">
+                            <div id="legend">
+                                <legend class="">Register</legend>
+                            </div>
+                            <div class="control-group">
+                                <!-- Username -->
+                                <label class="control-label"  for="username">Username</label>
+                                <div class="controls">
+                                    <input type="text" id="username" name="user" placeholder="" class="input-xlarge">
+                                    <p class="help-block">Usuario puede tener letras o numeros</p>
                                 </div>
                             </div>
-                        </div>
+                            <div class="control-group">
+                                <!-- Password-->
+                                <label class="control-label" for="password">Password</label>
+                                <div class="controls">
+                                    <input type="password" id="password" name="password" placeholder="" class="input-xlarge" required>
+                                    <p class="help-block">Password debe tener minimo 4 caracteres</p>
+                                </div>
+                            </div>
+                            
+                            <div class="control-group">
+                                <!-- Password -->
+                                <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+                                <div class="controls">
+                                    <input type="password" id="password_confirm" name="cpassword" placeholder="" class="input-xlarge" required>
+                                    <p class="help-block">Confirmar Password</p>
+                                </div>
+                            </div>
+                            
+                            <div class="control-group">
+                                <!-- Button -->
+                                <div class="controls">
+                                    <button class="btn btn-success">Registrar</button>
+                                </div>
+                            </div>
+                        </fieldset>
                     </form>
                     
                 </div>

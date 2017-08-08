@@ -17,7 +17,7 @@ mysqli_query($conexion,"update cita
                        id_TipoDeServicio='$_POST[servicio]'                       
                        where id_Cita='$_POST[cita]'") or die ("Problemas en el Update".mysqli_error());
 echo "<font color='white'>La Cita fue modificada con exito.</font>";
-header('refresh:2;url=administra_cita.php')
+header('refresh:2;url=edCita.php')
 
 
 ?>

@@ -11,7 +11,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
 ?>
 <html>
     <head>
-        <title>Medicos</title>
+        <title>Editar Medicos</title>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -19,7 +19,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
     </head>
     <body>
         <center>
-        <h1 id="tit">MEDICOS</h1>
+        <h1 id="tit">Editat MEDICOS</h1>
         <?php
         $conexion=mysqli_connect("localhost","root","","dentaltorreon");
         $registros=mysqli_query($conexion,"select * from medico");

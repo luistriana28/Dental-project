@@ -19,7 +19,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
     </head>
     <body>
         <center>
-        <h1 id="tit">PROVEEDORES</h1>
+        <h1 id="tit">Editar PROVEEDORES</h1>
         <?php
         $conexion=mysqli_connect("localhost","root","","dentaltorreon");
         $registros=mysqli_query($conexion,"select * from provedor inner join medico where provedor.id_medico=medico.id_medico");

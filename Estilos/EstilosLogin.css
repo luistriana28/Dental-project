@@ -1,47 +1,6 @@
 body{
-	background-color: black;
+	background-image: url(../img/azul.jpg);
+	width:100%; 
+	height:100%;
+	background-size: 100%;
 }
-.container-login{
-	position: absolute;
-	top: 15%;
-	left: 33%;
-	width: 30%;
-	height: 50% auto;
-	background-color: ;
-	border-radius: 15px;
-	border: 1px solid black;
-	color: black;
-	background-color: azure;
-}
-.container-login-header{
-	position: relative text-centered;
-	width: 100%;
-	height: 20%;
-	background-color: ;
-	border-bottom: 1px solid #000;
-}
-.text-centered{
-	position: relative;
-	margin-left: 20%;
-
-}
-.container-login-body{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	background-color:;
-}
-.container-login-form a{
-	position: relative;
-	margin-bottom: 3%;
-}
-.container-form{
-	width: 80%;
-	padding-left: 15%;
-	margin-top: 5%;	
-}
-.container-form input{
-	margin: 0%;
-}
-
-

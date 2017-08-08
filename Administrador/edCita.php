@@ -12,10 +12,10 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
 <html>
     <head>
         <title>Editar Cita</title>
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="estilopagina.css">
+        <link rel="stylesheet" type="text/css" href="../Estilos/estilopagina.css">
     </head>
     <body>
         <center>
@@ -33,7 +33,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         echo "</table>";
         ?>
         <br/>
-        <img src="img/dientelimpio.png"/><br/>
+        <img src="../img/dientelimpio.png"/><br/>
         <a href="Editar.php">Regresar</a></center>
        
     </body>

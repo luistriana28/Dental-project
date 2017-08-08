@@ -25,7 +25,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
             <td id="menu"><ul ><a href="administra_medicos.php" class="btn btn-info btn-lg"><font color="black">Medico</font></a><br /></ul></td>
             <td id="menu"><ul><a href="administra_proveedores.php" class="btn btn-info btn-lg"><font color="black">Proveedor</font></a><br /></ul></td>
             <td id="menu"><ul ><a href="administra_personas.php" class="btn btn-info btn-lg"><font color="black">Paciente</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="administra_cita.php" class="btn btn-info btn-lg"><font color="black">Cita</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="edCita.php" class="btn btn-info btn-lg"><font color="black">Cita</font></a><br /></ul></td>
         </table>
         <table>
             <td id="menu"><ul ><a href="administra_tratamiento.php" class="btn btn-info btn-lg"><font color="black">Tratamiento</font></a><br /></ul></td>
