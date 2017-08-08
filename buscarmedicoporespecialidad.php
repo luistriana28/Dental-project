@@ -21,7 +21,7 @@
         <center><h3 id="tit">Buscar Medico por Especialidad</h3>
         <fieldset id="feel">
             <form method="post">
-                <font id="letras">Seleccione la Especialidad del Medico:</font><br />
+                <font id="letras"> <strong>Seleccione la Especialidad del Medico:</strong></font><br />
                 <?php
                 $conexion=mysqli_connect("localhost","root")
                 or die("Problemas de conexion");
@@ -36,7 +36,7 @@
                     }
                 echo "</select><br/><br/>";
                 ?>
-                <input  type="submit" value="Buscar"/>
+                <input  type="submit" value="Buscar"/ class="btn btn-info btn-lg">
             </form></fieldset></center>
             <br />
             <br />

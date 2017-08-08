@@ -20,7 +20,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <center>
         <h1 id="tit">Buscar Expediente por Fecha de Ingreso</h1>
         <fieldset id="feel"><form method="post">
-            <font id="letras">Buscar Expediente por Fecha de Ingreso:</font><br />
+            <font id="letras"> <strong>Buscar Expediente por Fecha de Ingreso:</font><br />
             <?php
             $conexion=mysqli_connect("localhost","root")
             or die("Problemas de conexion");
@@ -35,7 +35,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
                 }
             echo "</select><br/><br/>";
             ?>
-            <input type="submit" value="Buscar Expediente" />
+            <input type="submit" value="Buscar Expediente" class="btn btn-info btn-lg" />
         </form>
     </fieldset></center>
     <br />

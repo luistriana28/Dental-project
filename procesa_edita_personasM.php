@@ -1,6 +1,10 @@
 <html>
 <head>
 <title>EDICION PERSONAS</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/query/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
 </head>
 <body>
 <?php
@@ -19,10 +23,6 @@ or die("Problemas en el select:".mysql_error());
 echo "<font color='white'>El Paciente fue modificado con exito.</font>";
 header("refresh: 2; url = administra_personasM.php");
 ?>
-<style>
-body{
-    background: url('img/log1.JPG');
-}
-</style>
+
 </body>
 </html>

@@ -15,8 +15,9 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
     </head>
-    <body background="img/log1.JPG">
+    <body >
         <?php
         $nombre_medicamento=$_POST['nombre_medicamento'];
         $fecha=$_POST['fecha'];

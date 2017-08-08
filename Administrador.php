@@ -22,11 +22,16 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <center><h1 id="M">ADMINISTRADOR</h1></center>
         <table>
             <td id="menu"><ul >
-                <li><a href="Registrar.php"><font color="black">REGISTRAR</font></a></li><br />
-                <li><a href="Buscar.php"><font color="black">BUSCAR</font></a></li><br />
-                <li><a href="Ver.php"><font color="black">VER</font></a></li><br />
-                <li><a href="Eliminar.php"><font color="black">ELIMINAR</font></a></li><br />
-                <li><a href="Editar.php"><font color="black">EDITAR</font></a></li><br />
+                <a href="Registrar.php" class="btn btn-info btn-lg"><font color="black">REGISTRAR</font></a><br />
+                <br />
+                <a href="Buscar.php" class="btn btn-info btn-lg"><font color="black">BUSCAR</font></a><br />
+                <br />
+                <a href="Ver.php" class="btn btn-info btn-lg"><font color="black">VER</font></a><br />
+                <br />
+                <a href="Eliminar.php" class="btn btn-info btn-lg"><font color="black">ELIMINAR</font></a><br />
+                <br />
+                <a href="Editar.php" class="btn btn-info btn-lg"><font color="black">EDITAR</font></a><br />
+                <br />
             </ul>
         </td>
     </table>

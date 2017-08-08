@@ -15,13 +15,14 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
     </head>
     <body>
         <center>
         <h3 id="tit">Buscar Proveedor por Marcas</h3>
         <fieldset id="feel">
             <form method="post">
-                <font id="letras">Seleccione la Marca:</font>
+                <font id="letras"> <strong>Seleccione la Marca:</strong></font>
                 <?php
                 $conexion=mysqli_connect("localhost","root")
                 or die("Problemas de conexion");
@@ -36,7 +37,7 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
                     }
                 echo "</select><br/><br/>";
                 ?>
-                <input  type="submit" value="Buscar"/>
+                <input  type="submit" value="Buscar" class="btn btn-info btn-lg"/>
             </form></fieldset></center>
             <br />
             <br />
@@ -81,31 +82,6 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
         <br />
         <center><img src="img/dientelimpio.png"/><br />
         <a href="buscar.php">Regresar</a></center>
-        <style>
-        body{
-        background-image:url('img/log1.JPG');
         
-        }
-        #letras
-        {
-        color: black;
-        font-family: Baskerrille Old Face;
-        font-size: 20px;
-        }
-        #input[type=submit]:hover {
-        cursor: pointer;
-        background: #000040;
-        color: white;
-        }
-        #feel{
-        width: 425px;
-        height: 120px;
-        background: #88C4FF;
-        }
-        #tit{
-        color: white;
-        font-family: Baskerrille Old Face;
-        }
-        </style>
     </body>
 </html>

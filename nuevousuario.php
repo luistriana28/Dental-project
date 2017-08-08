@@ -14,20 +14,23 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilopagina.css">
     </head>
     <body>
         <form method="post" action="">
             <center><h1 id="tit">Registro de Nuevo Usuario</h1>
             <fieldset id="feel">
                 <form method="post" action="">
-                    <font id="letras">Usuario:</font>
+                    <font id="letras"> <strong>Usuario: </strong></font>
                     <input  type="text" name="user" /><br />
-                    <font id="letras">Password:</font>
+                    <font id="letras"> <strong>Password: </strong></font>
                     <input  type="password" name="password" /><br />
-                    <font id="letras">Confirmar Password:</font>
+                    <font id="letras"> <strong>Confirmar Password: </strong></font>
                     <input type="password" name="cpassword" />
                     <br />
-                    <input type="submit" name="Registrar Nuevo Medico" id="input" />
+                     <br />
+
+                    <input class="btn btn-info btn-lg" type="submit" name="Registrar Nuevo Medico" id="input" />
                 </form>
             </fieldset>
             <?php
@@ -71,33 +74,12 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
             mysqli_close($conexion);
             ?>
             <br />
+             <br />
+              <br />
+               <br />
+                <br />
             <center><img src="img/dientelimpio.png"/><br />
             <a href="registrar.php">Regresar</a></center>
-            <style>
-            body{
-            background: url('img/log1.JPG');
             
-            }
-            #letras
-            {
-            color: black;
-            font-family: Baskerrille Old Face;
-            font-size: 20px;
-            }
-            #input[type=submit]:hover {
-            cursor: pointer;
-            background: #000040;
-            color: white;
-            }
-            #feel{
-            width: 425px;
-            height: 150px;
-            background: #88C4FF;
-            }
-            #tit{
-            color: white;
-            font-family: Baskerrille Old Face;
-            }
-            </style>
         </body>
     </html>
