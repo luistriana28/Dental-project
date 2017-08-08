@@ -20,7 +20,7 @@
         <center>
         <h3 id="tit">Buscar Receta Por Medico</h3>
         <fieldset id="feel"><form method="post">
-            <font id="letras">Seleccione al Medico:</font>
+            <font id="letras"> <strong>Seleccione al Medico: </strong></font>
             <?php
             $conexion=mysqli_connect("localhost","root")
             or die("Problemas de conexion");
@@ -35,7 +35,7 @@
                 }
             echo "</select><br/><br/>";
             ?>
-            <input  type="submit" value="Buscar"/>
+            <input  type="submit" value="Buscar"  class="btn btn-info btn-lg" />
         </form></fieldset></center>
         <center>
         <?php

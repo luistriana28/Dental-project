@@ -21,7 +21,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <center><h1 id="tit">Alta Cita</h1>
         <fieldset id="feel">
             <form method="post" action="verificaaltacitas.php">
-                <font id="letras">Cita AAAA-MM-DD: </font><input name="fecha" type="text" maxlength="12" /><br />
+                <font id="letras"><strong>Cita AAAA-MM-DD: </font><input name="fecha" type="text" maxlength="12" /><br />
                 <font id="letras">Nombre de Paciente:</font>
                 <?php
                 $conexion=mysqli_connect("localhost","root") or die("Problemas de conexion");
@@ -50,7 +50,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
                     }
                 echo "</select><br/>";
                 ?>
-                <font id="letras">Tipo de Servicio:</font>
+                <font id="letras">Tipo de Servicio: </strong></font>
                 <?php
                 $conexion=mysqli_connect("localhost","root") or die("Problemas de conexion");
                 mysqli_select_db($conexion,"dentaltorreon") or die ("Problemas de conexion de la base de datos");
@@ -63,9 +63,14 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
                     }
                 echo "</select><br/>";
                 ?>
-                <input type="submit" value="Registrar" id="input"/>
+                 <br />
+             <br />
+                <input type="submit" value="Registrar" id="input"/ class="btn btn-info btn-lg">
             </form></fieldset>
             <br />
+             <br />
+              <br />
+             <br />
             <img src="img/dientelimpio.png"/><br />
             <a href="registrar.php">Regresar</a></center>
             

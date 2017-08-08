@@ -21,15 +21,15 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         
         <h1 id="M">Ver:</h1>
         <center><table>
-            <td id="menu"><ul ><li><a href="vermedicos.php"><font color="black">Medicos</font></a></li><br /></ul></td>
-            <td id="menu"><ul ><li><a href="verpacientes.php"><font color="black">Pacientes</font></a></li><br /></ul></td>
-            <td id="menu"><ul ><li><a href="verproveedor.php"><font color="black">Proveedores</font></a></li><br /></ul></td>
-            <td id="menu"><ul ><li><a href="vercitas.php"><font color="black">Citas</font></a></li><br /></ul></td>
+            <td id="menu"><ul ><a href="vermedicos.php" class="btn btn-info btn-lg"><font color="black">Medicos</font></a><br /></ul></td>
+            <td id="menu"><ul ><a href="verpacientes.php" class="btn btn-info btn-lg"><font color="black">Pacientes</font></a><br /></ul></td>
+            <td id="menu"><ul ><a href="verproveedor.php" class="btn btn-info btn-lg"><font color="black">Proveedores</font></a><br /></ul></td>
+            <td id="menu"><ul ><a href="vercitas.php" class="btn btn-info btn-lg"><font color="black">Citas</font></a><br /></ul></td>
         </table></center>
         <center><table>
-            <td id="menu"><ul ><li><a href="verreceta.php"><font color="black">Receta</font></a></li><br /></ul></td>
-            <td id="menu"><ul ><li><a href="vertratamiento.php"><font color="black">Tratamientos</font></a></li><br /></ul></td>
-            <td id="menu"><ul ><li><a href="verexpediente.php"><font color="black">Expedientes</font></a></li><br /></ul></td>
+            <td id="menu"><ul ><a href="verreceta.php" class="btn btn-info btn-lg"><font color="black">Receta</font></a><br /></ul></td>
+            <td id="menu"><ul ><a href="vertratamiento.php" class="btn btn-info btn-lg"><font color="black">Tratamientos</font></a><br /></ul></td>
+            <td id="menu"><ul ><a href="verexpediente.php" class="btn btn-info btn-lg"><font color="black">Expedientes</font></a><br /></ul></td>
         </table>
         <br />
         <img src="img/dientelimpio.png"/><br />

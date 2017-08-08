@@ -22,23 +22,24 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <center><h1 id="M">REGISTRAR</h1></center>
         <center>
         <center><table>
-            <td id="menu"><ul><li><a href="nuevousuario.php"><font color="black">Nuevo usuario</font></a></li><br /></ul></td>
+            <td id="menu"><ul><a href="nuevousuario.php" class="btn btn-info btn-lg"><font color="black">Nuevo usuario</font></a><br /></ul></td>
+            <br />
         </table>
         </center>
         <center><table>
-            <td id="menu"><ul ><li><a href="formaltamedicos.php"><font color="black">Medico</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="formaltapacientes.php"><font color="black">Paciente</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="formaltaproveedor.php"><font color="black">Proveedor</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="Servicio.php"><font color="black">Servicio</font></a></li><br /></ul></td>
+            <td id="menu"><ul ><a href="formaltamedicos.php" class="btn btn-info btn-lg"><font color="black">Medico</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="formaltapacientes.php" class="btn btn-info btn-lg"><font color="black">Paciente</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="formaltaproveedor.php" class="btn btn-info btn-lg"><font color="black">Proveedor</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="Servicio.php" class="btn btn-info btn-lg"><font color="black">Servicio</font></a><br /></ul></td>
         </table></center>
         <center><table>
-            <td id="menu"><ul><li><a href="formaltacita.php"><font color="black">Cita</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="formaltatratamiento.php"><font color="black">Tratamiento</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="formaltareceta.php"><font color="black">Receta</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="formaltaexpediente.php"><font color="black">Expediente</font></a></li><br /></ul></td>
+            <td id="menu"><ul><a href="formaltacita.php" class="btn btn-info btn-lg"><font color="black">Cita</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="formaltatratamiento.php" class="btn btn-info btn-lg"><font color="black">Tratamiento</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="formaltareceta.php" class="btn btn-info btn-lg"><font color="black">Receta</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="formaltaexpediente.php" class="btn btn-info btn-lg"><font color="black">Expediente</font></a><br /></ul></td>
         </table></center>
         <br />
         <img src="img/dientelimpio.png"/><br />
-        <a href="administrador.php">Regresar</a>
+        <a href="administrador.php" >Regresar</a>
     </body>
 </html>

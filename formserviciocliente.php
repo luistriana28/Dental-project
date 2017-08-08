@@ -21,7 +21,7 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
         <center><h1 id="tit">Alta Servicio al Cliente</h1>
         <fieldset id="feel">
             <form method="post" action="verificaaltaserviciocliente.php">
-                <font id="letras">Seleccione al Paciente:</font>
+                <font id="letras"> <strong>Seleccione al Paciente: </strong></font>
                 <?php
                 $conexion=mysqli_connect("localhost","root")
                 or die("Problemas de conexion");
@@ -37,7 +37,7 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
                 echo "</select><br/>";
                 ?>
                 <br />
-                <font id="letras">Seleccione al Medico:</font>
+                <font id="letras"> <strong>Seleccione al Medico: </strong></font>
                 <?php
                 $conexion=mysqli_connect("localhost","root")
                 or die("Problemas de conexion");
@@ -53,7 +53,7 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
                 echo "</select><br/>";
                 ?>
                 <br />
-                <font id="letras">Seleccione el Tipo de Servicio:</font>
+                <font id="letras"> <strong>Seleccione el Tipo de Servicio: </strong></font>
                 <?php
                 $conexion=mysqli_connect("localhost","root")
                 or die("Problemas de conexion");
@@ -68,9 +68,11 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
                     }
                 echo "</select><br/><br/>";
                 ?>
-                <input type="submit" value="Guardar" id="input" />
+                <input type="submit" value="Guardar" id="input" class="btn btn-info btn-lg" />
             </form></fieldset>
             <br />
+             <br />
+              <br />
             <img src="img/dientelimpio.png"/><br />
             <a href="servicio.php">Regresar</a></center>
             

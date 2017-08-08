@@ -21,10 +21,10 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
         <center><h1 id="tit">Alta Tipo Servicio</h1>
         <fieldset id="feel">
             <form method="post" action="verificatipodeservicio.php">
-                <font id="letras">Ingrese el nombre del Tipo de Servicio:</font>
-                <input type="text" name="nombre"  size="40"  />
+                <font id="letras">  <strong>Ingrese el nombre del Tipo de Servicio: </strong></font>
+                <input type="text" name="nombre"  size="20"  />
                 <br /><br />
-                <input type="submit" value="Registrar" id="input"/>
+                <input type="submit" value="Registrar" id="input" class="btn btn-info btn-lg"/>
             </form></fieldset>
             <br />
             <img src="img/dientelimpio.png"/><br />

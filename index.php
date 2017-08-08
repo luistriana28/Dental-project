@@ -13,9 +13,11 @@
             <br /><br /><br />
             <fieldset id="feel">
                 <form method="post" action="verificamedicos.php">
-                    <span>Usuario: </span><input class="form-group" type="text" name="user" /><br />
-                    <span>Password: </span><input class="form-group" type="password" name="pass" />
-                    <input type="submit" value="Entrar" id="input"/>
+                    <span>  <strong>Usuario: </strong> </span><input class="form-group" type="text" name="user" /><br />
+                    <span>  <strong>Password:  </strong> </span><input class="form-group" type="password" name="pass" />
+                     <br />
+                    <br />
+                    <input class="btn btn-info btn-lg" type="submit" value="Entrar" id="input"/>
                 </form>
             </fieldset>
         </div>

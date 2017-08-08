@@ -21,7 +21,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <center><h1 id="tit">Alta Tratamiento</h1>
         <fieldset id="feel">
             <form method="post" action="verificaaltatratamiento.php">
-                <font id="letras">Tipo de Servicio:</font>
+                <font id="letras"> <strong>Tipo de Servicio:</font>
                 <?php
                 $conexion=mysqli_connect("localhost","root","","dentaltorreon")or die("Problemas de conexion");
                 $consulta="select * from tipodeservicio";
@@ -34,11 +34,11 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
                 echo "</select><br/><br/>";
                 ?>
                 <font id="letras">Nombre de Tratamiento:</font> <input type="text" name="nombre_tratamiento" size="10" maxlength="30" /><br /><br />
-                <font id="letras">Comentarios:</font> <textarea name="comentarios" cols="40" rows="5"></textarea><br /><br />
-                <input type="submit" value="Registrar" id="input" />
+                <font id="letras">Comentarios: </strong></font> <textarea name="comentarios" cols="26" rows="5"></textarea><br /><br /> <br /> 
+                <input type="submit" value="Registrar" id="input" class="btn btn-info btn-lg" />
                 <br />
-                <br />
-            </form></fieldset><br />
+                
+            </form></fieldset><br /><br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />  <br />
             <img src="img/dientelimpio.png"/><br />
             <a href="registrar.php">Regresar</a></center>
            

@@ -20,8 +20,8 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
     <body>
         <center><h1 id="M">Alta Servicios</h1></center>
         <center><table>
-            <td id="menu"><ul ><li><a href="formaltatiposervicio.php"><font color="black">Tipo de servicio</font></a></li><br /></ul></td>
-            <td id="menu"><ul><li><a href="formserviciocliente.php"><font color="black">Servicio al cliente</font></a></li><br /></ul></td>
+            <td id="menu"><ul ><a href="formaltatiposervicio.php" class="btn btn-info btn-lg"><font color="black">Tipo de servicio</font></a><br /></ul></td>
+            <td id="menu"><ul><a href="formserviciocliente.php" class="btn btn-info btn-lg"><font color="black">Servicio al cliente</font></a><br /></ul></td>
         </table>
         <br />
         <img src="img/dientelimpio.png"/><br />

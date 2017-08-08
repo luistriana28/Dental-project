@@ -18,7 +18,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
 		<link rel="stylesheet" type="text/css" href="estilopagina.css">
     </head>
     <body>
-        <center><h1 id="tit">Alta Expediente</h1></center>
+        <center><h1 id="tit"> <strong>Alta Expediente</h1></center>
         <center>
         <fieldset id="feel">
             <form method="post" action="verificaaltaexpediente.php">
@@ -36,12 +36,12 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
                 ?>
                 <br /><br />
                 <font id="letras">Fecha de Ingreso (AAAA-MM-DD):</font> <input type="text" name="ingreso" size="10" maxlength="10" /><br /><br />
-                <font id="letras">Comentarios:</font><br /><textarea name="comentarios"  cols="50" rows="5" maxlength="60">
+                <font id="letras">Comentarios:</strong></font><br /><textarea name="comentarios"  cols="26" rows="5" maxlength="40">
                 </textarea>
                 <br />
-                <input type="submit" value="Registrar" id="input"/>
+                <input type="submit" value="Registrar" id="input" class="btn btn-info btn-lg"/>
             </form></fieldset>
-            <br />
+            <br /> <br /> <br /> <br /> <br /> <br /> <br />
             <img src="img/dientelimpio.png"/><br />
             <a href="registrar.php">Regresar</a></center>
             

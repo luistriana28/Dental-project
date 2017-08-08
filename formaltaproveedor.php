@@ -21,13 +21,13 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <center><h1 id="tit">Alta Proveedor</h1><br />
         <fieldset id="feel">
             <form method="post" action="verificaaltaproveedor.php" >
-                <font id="letras">Nombre:</font> <input type="text" name="representante" size="20" maxlength="20" /><br />
-                <font id="letras">Direccion:</font><input type="text" name="direccion" size="20"maxlength="30" /><br />
-                <font id="letras">Telefono:</font><input type="text" name="telefono" size="20" maxlength="10" /><br />
-                <font id="letras">Fecha (AAAA-MM-DD):</font> <input type="text" name="fecha" size="20" maxlength="10" /><br />
-                <font id="letras">Marca: </font><input type="text" name="marca" size="20" maxlength="15" /><br />
-                <font id="letras">Mercancia:</font> <input type="text" name="mercancia" size="20" maxlength="30" /><br />
-                <font id="letras">Medico:
+                <font id="letras"> <strong>Nombre: </strong></font> <input type="text" name="representante" size="20" maxlength="20" /><br />
+                <font id="letras"> <strong>Direccion: </strong></font><input type="text" name="direccion" size="20" maxlength="30" /><br />
+                <font id="letras"> <strong>Telefono: </strong></font><input type="text" name="telefono" size="20" maxlength="10" /><br />
+                <font id="letras"> <strong>Fecha (AAAA-MM-DD): </strong></font> <input type="text" name="fecha" size="20" maxlength="10" /><br />
+                <font id="letras">  <strong>Marca: </strong> </font><input type="text" name="marca" size="20" maxlength="15" /><br />
+                <font id="letras"> <strong>Mercancia: </strong></font> <input type="text" name="mercancia" size="20" maxlength="30" /><br />
+                <font id="letras">  <strong>Medico: </strong>
                 <?php
                 $conexion=mysqli_connect("localhost","root","","dentaltorreon")or die("Problemas de conexion");
                 $consulta="select * from medico";
@@ -40,9 +40,20 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
                 echo "</select>";
                 ?>
                 <br />
-                <input type="submit" value="Registrar" id="input" />
+                 <br />
+                <input type="submit" value="Registrar" id="input" class="btn btn-info btn-lg" />
             </form></fieldset>
             <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+             <br />
             <img src="img/dientelimpio.png"/><br />
             <a href="registrar.php">Regresar</a></center>
             
