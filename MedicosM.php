@@ -1,8 +1,8 @@
 <?php
 session_start();
-if(isset($_SESSION['user']))
+if(isset($_SESSION['usuario']))
 {
-echo "<p align='right'>Usuario: ".$_SESSION['user'][0]."</br><a href='index.php'>Cerrar Sesion</a></p>";
+echo "<p align='right'>Usuario: ".$_SESSION['usuario']."</br><a href='index.php'>Cerrar Sesion</a></p>";
 }
 else
 {
