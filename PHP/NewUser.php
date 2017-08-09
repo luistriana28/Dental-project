@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <html>
     <head>
         <title>Nuevo usuario</title>
@@ -20,11 +23,17 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Inicio</a></li>
+                    <?php 
+                    if(isset($_SESSION['user'])){
+                        echo '<li class="active"><a href="#">Inicio</a></li>';        
+                    }
+                    else{
+                        echo '<li class="active"><a href="../index.php">Inicio</a></li>';
+                    }
+                    ?>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <?php
-                        session_start();
                         if(isset($_SESSION['user']))
                         {
                         echo "<li><a href='../index.php'><span class='glyphicon glyphicon-user'></span>Cerrar Sesion</a></li>";

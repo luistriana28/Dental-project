@@ -46,8 +46,8 @@ session_start();
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="nuevousuario.php">Nuevo usuario</a></td>
-                        <td><a href="RegServicioCliente.php">Servicio al Cliente</a></td>
+                        <td><a href="../PHP/NewUser.php">Nuevo usuario</a></td>
+                        <td><a href="regServicioCliente.php">Servicio al Cliente</a></td>
                     </tr>
                     <tr>
                         <td><a href="regMedico.php">Medico</a></td>
