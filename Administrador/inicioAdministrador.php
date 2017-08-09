@@ -9,6 +9,7 @@ header("Location:../index.php");
     <title>Administrador</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome.min.css">
     <script src="../bootstrap/query/jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../Estilos/estilopagina.css">
@@ -40,36 +41,43 @@ header("Location:../index.php");
         </div>
       </div>
     </nav>
-    <center><h1 id="M">ADMINISTRADOR</h1></center>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    <center><h1 id="M">ADMINISTRADOR</h1>
     <div class="container">
-      <div class="row">
-        <div class="col-xs-offset-3 col-xs-6 col-xs-offset-3">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">
-              <span class="glyphicon glyphicon-bookmark"></span>Opciones</h3>
-            </div>
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-xs-6 col-md-6">
-                  <a href="Registrar.php" class="btn btn-danger btn-lg" role="button"><span class="glyphicon glyphicon-list-alt"></span> <br/>Registrar</a>
-                  <a href="Eliminar.php" class="btn btn-warning btn-lg" role="button"><span class="glyphicon glyphicon-bookmark"></span> <br/>Eliminar</a>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                        <a href="Registrar.php" class="btn btn-sq-lg btn-primary">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Registrar
+                        </a>
+                        <a href="Eliminar.php" class="btn btn-sq-lg btn-success">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Eliminar
+                        </a>
+                        <a href="Ver.php" class="btn btn-sq-lg btn-warning">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Ver
+                        </a>
+                    </p>
                 </div>
-                <div class="col-xs-6 col-md-6">
-                  <a href="Buscar.php" class="btn btn-success btn-lg" role="button"><span class="glyphicon glyphicon-user"></span> <br/>Buscar</a>
-                  <a href="Ver.php" class="btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-bookmark"></span> <br/>Ver</a>
-                  <a href="Editar.php" class="btn btn-info btn-lg" role="button"><span class="glyphicon glyphicon-file"></span> <br/>Editar</a>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                        <a href="Editar.php" class="btn btn-sq-lg btn-danger">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Editar
+                        </a>
+                        <a href="Buscar.php" class="btn btn-sq-lg btn-info">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Buscar
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </center>
   </body>
 </html>

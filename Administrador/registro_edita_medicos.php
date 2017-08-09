@@ -10,10 +10,12 @@ echo "<p align='right'>"."<a href='logoutmedicos.php'>[Cerrar Sesión]</a></p>";
 <html>
   <head>
     <title>Modificar de Medicos</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/query/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="estilopagina.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap/css/font-awesome.min.css">
+        <script src="bootstrap/query/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../Estilos/estilopagina.css">
   </head>
   <body>
     <center>

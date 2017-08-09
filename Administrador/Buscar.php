@@ -1,72 +1,143 @@
 <?php
 session_start();
-if(isset($_SESSION['user']))
-{
-echo "<p align='right'><a href='index.php'>Cerrar Sesion</a></p>";
-}
-else
-{
-echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
-}
 ?>
 <html>
     <head>
         <title>Buscar</title>
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap/css/font-awesome.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="estilopagina.css">
+        <link rel="stylesheet" type="text/css" href="../Estilos/estilopagina.css">
     </head>
     <body>
+        <nav class="navbar navbar-default fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dental Torreon</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="inicioAdministrador.php">Inicio</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php
+                        if(isset($_SESSION['user']))
+                        {
+                        echo "<li><a href='../index.php'><span class='glyphicon glyphicon-user'></span>Cerrar Sesion</a></li>";
+                        }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <h2 id="details" style="text-align: center;">Buscar</h2>
+            </div><br>
+            <!-- Pack 1-->
+            <div class="col-md-3" id="home-box">
+                <div class="pricing_header">
+                    <h2>Medico</h2>
+                    <div class="space"></div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarmedicoporespecialidad.php"> Especialidad</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarmedicoporapellido.php"> Apellido</a></li>
+                </ul>
+            </div>
+            <!-- Pack 2-->
+            <div class="col-md-3" id="home-box">
+                <div class="pricing_header">
+                    <h2>Proveedor</h2>
+                    <div class="space"></div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarprovedorpormarca.php"> Marca</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarprovedorporrepresentante.php"> Representante</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarprovedorpormedico.php"> Medico</a></li>
+                </ul>
+            </div>
+            <!-- Pack 3-->
+            <div class="col-md-3" id="home-box">
+                <div class="pricing_header">
+                    <h2>Paciente</h2>
+                    <div class="space"></div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarpacientepormedico.php"> Medico</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarpacienteporapellido.php"> Apellido</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarpacienteporservicio.php"> Servicio</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarpacienteporingreso.php"> Fecha de ingreso</a></li>
+                </ul>
+            </div>
+            <!-- Pack 4-->
+            <div class="col-md-3" id="home-box">
+                <div class="pricing_header">
+                    <h2>Servicio</h2>
+                    <div class="space"></div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarserviciopormedico.php"> Medico</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarservicioporpaciente.php"> Paciente</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Pack 5-->
+            <div class="col-md-3" id="home-box">
+                <div class="pricing_header">
+                    <h2>Cita</h2>
+                    <div class="space"></div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarcitaporfecha.php"> Fecha</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarcitaporservicio.php"> Servicios</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarserviciopormedico.php"> Medico</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarservicioporpaciente.php"> Paciente</a></li>
+                </ul>
+            </div>
+            <!-- Pack 6-->
+            <div class="col-md-3" id="home-box">
+                <div class="pricing_header">
+                    <h2>Receta</h2>
+                    <div class="space"></div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarrecetapormedicamento.php"> Medicamentos</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarrecetapormedico.php"> Medicos</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarrecetaporpaciente.php"> Pacientes</a></li>
+                </ul>
+            </div>
+            <!-- Pack 7-->
+            <div class="col-md-3" id="home-box">
+                <div class="pricing_header">
+                    <h2>Tratamiento</h2>
+                    <div class="space"></div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscartratamientopornombre.php"> Nombre</a></li>
+                </ul>
+            </div>
+            <!-- Pack 8-->
+            <div class="col-md-3" id="home-box">
+                <div class="pricing_header">
+                    <h2>Expediente</h2>
+                    <div class="space"></div>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarexpedienteporpaciente.php"> Paciente</a></li>
+                    <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span><a href="buscarexpedienteporingreso.php"> Ingreso</a></li>
+                </ul>
+            </div>
+        </div>
         
-        <center><h1 id="letras">BUSCAR</h1></center>
-        <h3 id="letras">Buscar medico por:<br /></h3> 
-        <table>
-            <td id="menu"><ul ><a href="buscarmedicoporespecialidad.php"class="btn btn-info btn-lg" ><font color="black">Especialidad</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarmedicoporapellido.php" class="btn btn-info btn-lg"><font color="black">Apellido</font></a><br /></ul></td>
-        </table>
-        <h3 id="letras">Buscar proveedor por:<br /></h3>
-        <table>
-            <td id="menu"><ul ><a href="buscarprovedorpormarca.php" class="btn btn-info btn-lg"><font color="black">Marca</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarprovedorporrepresentante.php" class="btn btn-info btn-lg"><font color="black">Representante</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarprovedorpormedico.php" class="btn btn-info btn-lg"><font color="black">Medico</font></a><br /></ul></td>
-        </table>
-        <h3 id="letras">Buscar paciente por:<br /></h3>
-        <table>
-            <td id="menu"><ul ><a href="buscarpacientepormedico.php" class="btn btn-info btn-lg"><font color="black">Medico</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarpacienteporapellido.php" class="btn btn-info btn-lg"><font color="black">Apellido</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarpacienteporservicio.php" class="btn btn-info btn-lg"><font color="black">Servicio</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarpacienteporingreso.php" class="btn btn-info btn-lg"><font color="black">Fecha de ingreso</font></a><br /></ul></td>
-        </table>
-        <h3 id="letras">Buscar servicios por:<br /></h3>
-        <table>
-            <td id="menu"><ul><a href="buscarserviciopormedico.php" class="btn btn-info btn-lg"><font color="black">Medico</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarservicioporpaciente.php" class="btn btn-info btn-lg"><font color="black">Paciente</font></a><br /></ul></td>
-        </table>
-        <h3 id="letras">Buscar citas por:<br /></h3>
-        <table>
-            <td id="menu"><ul ><a href="buscarcitaporfecha.php" class="btn btn-info btn-lg"><font color="black">Fecha</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarcitaporservicio.php" class="btn btn-info btn-lg"><font color="black">Servicios</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarserviciopormedico.php" class="btn btn-info btn-lg"><font color="black">Medico</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarservicioporpaciente.php" class="btn btn-info btn-lg"><font color="black">Paciente</font></a><br /></ul></td>
-        </table>
-        <h3 id="letras">Buscar recetas por:<br /></h3>
-        <table>
-            <td id="menu"><ul ><a href="buscarrecetapormedicamento.php" class="btn btn-info btn-lg"><font color="black">Medicamentos</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarrecetapormedico.php" class="btn btn-info btn-lg"><font color="black">Medicos</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarrecetaporpaciente.php" class="btn btn-info btn-lg"><font color="black">Pacientes</font></a><br /></ul></td>
-        </table>
-        <h3 id="letras">Buscar tratamientos por:<br /></h3>
-        <table>
-            <td id="menu"><ul ><a href="buscartratamientopornombre.php" class="btn btn-info btn-lg"><font color="black">Nombre</font></a><br /></ul></td>
-        </table>
-        <h3 id="letras">Buscar expediente por:<br /></h3>
-        <table>
-            <td id="menu"><ul ><a href="buscarexpedienteporpaciente.php" class="btn btn-info btn-lg"><font color="black">Paciente</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="buscarexpedienteporingreso.php" class="btn btn-info btn-lg"><font color="black">Ingreso</font></a><br /></ul></td>
-        </table>
-        <br />
-        <img src="img/dientelimpio.png"/><br />
-        <a href="Administrador.php">Regresar</a>
+        
     </body>
 </html>

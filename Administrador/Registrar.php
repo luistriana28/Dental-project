@@ -6,6 +6,7 @@ session_start();
         <title>REGISTRAR</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap/css/font-awesome.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../Estilos/estilopagina.css">
@@ -23,7 +24,7 @@ session_start();
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Inicio</a></li>
+                        <li class="active"><a href="inicioAdministrador.php">Inicio</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <?php
@@ -36,43 +37,63 @@ session_start();
                 </div>
             </div>
         </nav>
-        <center><h1 id="M">REGISTRAR</h1></center>
-        <div class="wrapper">
-            <table id="acrylic" style="text-align: center;">
-                <thead>
-                    <tr>
-                        <th colspan="2">Opciones de Administrador</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="../PHP/NewUser.php">Nuevo usuario</a></td>
-                        <td><a href="regServicioCliente.php">Servicio al Cliente</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="regMedico.php">Medico</a></td>
-                        <td><a href="regPaciente.php">Paciente</a></td>
-                        
-                    </tr>
-                    <tr>
-                        <td><a href="regProveedor.php">Proveedor</a></td>
-                        <td><a href="regReceta.php">Receta</a></td>
-                        
-                    </tr>
-                    <tr>
-                        <td><a href="regTipoDeServicio.php">Tipo de Servicio</a></td>
-                        <td><a href="regCita.php">Cita</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="regTratamiento.php">Tratamiento</a></td>
-                        <td><a href="regExpediente.php">Expediente</a></td>
-                    </tr>
-                </tbody>
-            </table>
+        <center><h1 id="M">REGISTRAR</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                        <a href="../PHP/NewUser.php" class="btn btn-sq-lg btn-primary">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Nuevo<br/>Usuario
+                        </a>
+                        <a href="regServicioCliente.php" class="btn btn-sq-lg btn-success">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Servicio al<br/>Cliente
+                        </a>
+                        <a href="regMedico.php" class="btn btn-sq-lg btn-info">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Medico
+                        </a>
+                        <a href="regPaciente.php" class="btn btn-sq-lg btn-warning">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Paciente
+                        </a>
+                         <a href="regProveedor.php" class="btn btn-sq-lg btn-danger">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Proveedor
+                        </a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <center>
-        <img src="../img/dientelimpio.png"/><br />
-        <a href="../Administrador/inicioAdministrador.php" >Regresar</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                    <a href="regReceta.php" class="btn btn-sq-lg btn-default">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Receta
+                        </a>
+                        <a href="regTipoDeServicio.php" class="btn btn-sq-lg btn-warning">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Tipo de <br/>Servicio
+                        </a>
+                        <a href="regCita.php" class="btn btn-sq-lg btn-danger">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Cita
+                        </a>
+                        <a href="regTratamiento.php" class="btn btn-sq-lg btn-success">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Tratamiento
+                        </a>
+                        <a href="regExpediente.php" class="btn btn-sq-lg btn-primary">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Expediente
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
         </center>
     </body>
 </html>

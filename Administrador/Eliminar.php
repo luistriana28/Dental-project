@@ -1,39 +1,91 @@
 <?php
 session_start();
-if(isset($_SESSION['usuario']))
-{
-echo "<p align='right'><a href='index.php'>Cerrar Sesion</a></p>";
-}
-else
-{
-echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
-}
 ?>
 <html>
     <head>
         <title>Eliminar</title>
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap/css/font-awesome.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="estilopagina.css">
+        <link rel="stylesheet" type="text/css" href="../Estilos/estilopagina.css">
     </head>
     <body>
-        
+        <nav class="navbar navbar-default fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dental Torreon</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="inicioAdministrador.php">Inicio</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php
+                        if(isset($_SESSION['user']))
+                        {
+                        echo "<li><a href='../index.php'><span class='glyphicon glyphicon-user'></span> Cerrar Sesion</a></li>";
+                        }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <center><h1 id="letras">ELIMINAR</h1>
-        <table>
-            <td id="menu"><ul ><a href="eliminamedicos.php" class="btn btn-info btn-lg"><font color="black">Medico</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="eliminaproveedor.php" class="btn btn-info btn-lg"><font color="black">Proveedor</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="eliminapacientes.php" class="btn btn-info btn-lg"><font color="black">Paciente</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="eliminacitas.php" class="btn btn-info btn-lg"><font color="black">Cita</font></a><br /></ul></td>
-        </table>
-        <table>
-            <td id="menu"><ul ><a href="eliminaservicio.php" class="btn btn-info btn-lg"><font color="black">Servicio</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="eliminatratamiento.php" class="btn btn-info btn-lg"><font color="black">Tratamiento</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="eliminareceta.php" class="btn btn-info btn-lg"><font color="black">Receta</font></a><br /></ul></td>
-            <td id="menu"><ul><a href="eliminaexpediente.php" class="btn btn-info btn-lg"><font color="black">Expediente</font></a><br /></ul></td>
-        </table>
-        <br />
-        <img src="img/dientelimpio.png"/><br />
-        <a href="Administrador.php">Regresar</a></center>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                        <a href="administra_medicos.php" class="btn btn-sq-lg btn-primary">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Medico
+                        </a>
+                        <a href="administra_proveedores.php" class="btn btn-sq-lg btn-success">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Proveedor
+                        </a>
+                        <a href="administra_personas.php" class="btn btn-sq-lg btn-info">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Paciente
+                        </a>
+                        <a href="edCita.php" class="btn btn-sq-lg btn-warning">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Cita
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                        <a href="administra_medicos.php" class="btn btn-sq-lg btn-warning">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Servicio
+                        </a>
+                        <a href="administra_proveedores.php" class="btn btn-sq-lg btn-danger">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Tratamiento
+                        </a>
+                        <a href="administra_personas.php" class="btn btn-sq-lg btn-success">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Receta
+                        </a>
+                        <a href="edCita.php" class="btn btn-sq-lg btn-primary">
+                            <i class="fa fa-user fa-5x"></i><br/>
+                            Expediente
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </center>
     </body>
 </html>

@@ -185,3 +185,7 @@ table#acrylic {
             opacity: 1;
             transition: 0.2s all;
         }
+.btn-sq-lg {
+  width: 150px !important;
+  height: 150px !important;
+}
