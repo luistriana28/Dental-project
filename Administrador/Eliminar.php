@@ -54,7 +54,7 @@ session_start();
                             <i class="fa fa-user fa-5x"></i><br/>
                             Paciente
                         </a>
-                        <a href="edCita.php" class="btn btn-sq-lg btn-warning">
+                        <a href="elCita.php" class="btn btn-sq-lg btn-warning">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Cita
                         </a>
@@ -78,7 +78,7 @@ session_start();
                             <i class="fa fa-user fa-5x"></i><br/>
                             Receta
                         </a>
-                        <a href="edCita.php" class="btn btn-sq-lg btn-primary">
+                        <a href="elExpediente.php" class="btn btn-sq-lg btn-primary">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Expediente
                         </a>

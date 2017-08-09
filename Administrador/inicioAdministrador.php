@@ -27,7 +27,7 @@ header("Location:../index.php");
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Inicio</a></li>
+            <li class="active"><a href="inicioAdministrador.php">Inicio</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <?php

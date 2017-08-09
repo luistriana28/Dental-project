@@ -51,6 +51,7 @@ if(isset($_SESSION['user']))
                 <br />
                 
                 <input type="submit" value="Registrar" id="input"  class="btn btn-info btn-lg" />
-            </form></fieldset>           
+            </form></fieldset> 
+            </center>          
         </body>
     </html>

@@ -6,8 +6,8 @@
         //Validar que existan los datos
         if (empty($_POST['user']) || empty($_POST['pass']))
         {
-            echo"<center><font color='white'><h1>No se aceptan CAMPOS VACIOS</h1></font></center>";
-            header("refresh:2;url=index.php");
+            echo"<center><font color='black'><h1>No se aceptan CAMPOS VACIOS</h1></font></center>";
+            header("refresh:2;url=../index.php");
         }
         else
         {
@@ -26,20 +26,21 @@
                 {
                     $_SESSION['user']=$rol;
                     //Abrir el archivo de gerente
-                    echo "<center><font color='white'><h1>Bienvenido Administrador</h1></font></center>";
+                    echo "<center><font color='black'><h1>Bienvenido Administrador</h1></font></center>";
                     header("refresh:1;url=../Administrador/inicioAdministrador.php");
                 }
                 else
                 {
                     $_SESSION['user']=$rol;
                     //Abrir el archivo de gerente
-                    echo "<center><font color='white'><h1>Bienvenido  ".$_SESSION['user'][0]."</h1></font></center>";
+                    echo "<center><font color='black'><h1>Bienvenido  ".$_SESSION['user'][0]."</h1></font></center>";
                     header("refresh:1;url=../Medicos/inicioMedicos.php"); 
                 }
             }
             else
             {
-                echo 'Datos Incorrectos';
+                echo "<center><font color='black'><h1>Datos Incorrectos</h1></font></center>";
+                header("refresh:1;url=../index.php");
             }
         }
     }
