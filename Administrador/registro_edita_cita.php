@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION['usuario']))
+if(!isset($_SESSION['user']))
 {
 header('Location: loginmedicos.php');
 }
@@ -66,8 +66,8 @@ echo "<p align='right'>"."<a href='logoutmedicos.php'>[Cerrar Sesión]</a></p>";
         <input type="submit" value="Editar"/>
       </form>
       <br />
-      <img src="img/dientelimpio.png"/><br />
-      <a href="administra_cita.php">Regresar</a></center>
+      <img src="../img/dientelimpio.png"/><br />
+      <a href="edCita.php">Regresar</a></center>
       <br />
       
       <?php

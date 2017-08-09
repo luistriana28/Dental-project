@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['usuario']))
+if(isset($_SESSION['user']))
 {
 echo "<p align='right'><a href='index.php'>Cerrar Sesion</a></p>";
 }
