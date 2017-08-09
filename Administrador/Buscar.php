@@ -1,5 +1,13 @@
 <?php
 session_start();
+if(isset($_SESSION['user']))
+{
+echo "<p align='right'><a href='index.php'>Cerrar Sesion</a></p>";
+}
+else
+{
+echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
+}
 ?>
 <html>
     <head>
