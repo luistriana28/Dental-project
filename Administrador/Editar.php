@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (empty($_SESSION["user"])) {
+header("Location:../index.php");
+}
 ?>
 <html>
     <head>
@@ -30,40 +33,45 @@ session_start();
                         <?php
                         if(isset($_SESSION['user']))
                         {
-                        echo "<li><a href='../index.php'><span class='glyphicon glyphicon-user'></span> Cerrar Sesion</a></li>";
+                        echo "<li><a href='../PHP/logout.php'><span class='glyphicon glyphicon-user'> </span>".$_SESSION['user'][0].":  Cerrar Sesion</a></li>";
                         }
-                        
                         ?>
                     </ul>
                 </div>
             </div>
         </nav>
-        <center><h1 id="letras">EDITAR</h1></center>
+        <center><h1 id="letras">EDITAR</h1>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
                     <p>
-                        <a href="administra_medicos.php" class="btn btn-sq-lg btn-primary">
+                        <a href="edMedico.php" class="btn btn-sq-lg btn-primary">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Medico
                         </a>
-                        <a href="administra_proveedores.php" class="btn btn-sq-lg btn-success">
+                        <a href="edProveedor.php" class="btn btn-sq-lg btn-success">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Proveedor
                         </a>
-                        <a href="administra_personas.php" class="btn btn-sq-lg btn-info">
+                        <a href="edPaciente.php" class="btn btn-sq-lg btn-info">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Paciente
                         </a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p> 
                         <a href="edCita.php" class="btn btn-sq-lg btn-warning">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Cita
                         </a>
-                        <a href="administra_tratamiento.php" class="btn btn-sq-lg btn-danger">
+                        <a href="edTratamiento.php" class="btn btn-sq-lg btn-danger">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Tratamiento
                         </a>
-                        <a href="administra_receta.php" class="btn btn-sq-lg btn-primary">
+                        <a href="edReceta.php" class="btn btn-sq-lg btn-primary">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Receta
                         </a>
@@ -71,5 +79,6 @@ session_start();
                 </div>
             </div>
         </div>
+        </center>
     </body>
 </html>

@@ -33,9 +33,8 @@ header("Location:../index.php");
             <?php
             if(isset($_SESSION['user']))
             {
-            echo "<li><a href='../index.php'><span class='glyphicon glyphicon-user'></span> Cerrar Sesion</a></li>";
+            echo "<li><a href='../PHP/logout.php'><span class='glyphicon glyphicon-user'> </span>".$_SESSION['user'][0].":  Cerrar Sesion</a></li>";
             }
-            
             ?>
           </ul>
         </div>
@@ -43,41 +42,41 @@ header("Location:../index.php");
     </nav>
     <center><h1 id="M">ADMINISTRADOR</h1>
     <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p>
-                        <a href="Registrar.php" class="btn btn-sq-lg btn-primary">
-                            <i class="fa fa-user fa-5x"></i><br/>
-                            Registrar
-                        </a>
-                        <a href="Eliminar.php" class="btn btn-sq-lg btn-success">
-                            <i class="fa fa-user fa-5x"></i><br/>
-                            Eliminar
-                        </a>
-                        <a href="Ver.php" class="btn btn-sq-lg btn-warning">
-                            <i class="fa fa-user fa-5x"></i><br/>
-                            Ver
-                        </a>
-                    </p>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <p>
+            <a href="Registrar.php" class="btn btn-sq-lg btn-primary">
+              <i class="fa fa-user fa-5x"></i><br/>
+              Registrar
+            </a>
+            <a href="Eliminar.php" class="btn btn-sq-lg btn-success">
+              <i class="fa fa-user fa-5x"></i><br/>
+              Eliminar
+            </a>
+            <a href="Ver.php" class="btn btn-sq-lg btn-warning">
+              <i class="fa fa-user fa-5x"></i><br/>
+              Ver
+            </a>
+          </p>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p>
-                        <a href="Editar.php" class="btn btn-sq-lg btn-danger">
-                            <i class="fa fa-user fa-5x"></i><br/>
-                            Editar
-                        </a>
-                        <a href="Buscar.php" class="btn btn-sq-lg btn-info">
-                            <i class="fa fa-user fa-5x"></i><br/>
-                            Buscar
-                        </a>
-                    </p>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>
+            <a href="Editar.php" class="btn btn-sq-lg btn-danger">
+              <i class="fa fa-user fa-5x"></i><br/>
+              Editar
+            </a>
+            <a href="Buscar.php" class="btn btn-sq-lg btn-info">
+              <i class="fa fa-user fa-5x"></i><br/>
+              Buscar
+            </a>
+          </p>
         </div>
-        </center>
+      </div>
+    </div>
+    </center>
   </body>
 </html>

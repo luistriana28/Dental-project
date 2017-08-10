@@ -1,12 +1,7 @@
 <?php
 session_start();
-if(isset($_SESSION['user']))
-{
-echo "<p align='right'><a href='index.php'>Cerrar Sesion</a></p>";
-}
-else
-{
-echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
+if (empty($_SESSION["user"])) {
+header("Location:../index.php");
 }
 ?>
 <html>
@@ -17,7 +12,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
         <link rel="stylesheet" href="../bootstrap/css/font-awesome.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="../Estilos/estilopagina.css">
+        <link rel="stylesheet" type="text/css" href="../Estilos/estiloBuscar.css">
     </head>
     <body>
         <nav class="navbar navbar-default fixed">
@@ -38,7 +33,7 @@ echo "<p align='right'><a href='loginmedicos.php'>Login</a></p>";
                         <?php
                         if(isset($_SESSION['user']))
                         {
-                        echo "<li><a href='../index.php'><span class='glyphicon glyphicon-user'></span>Cerrar Sesion</a></li>";
+                        echo "<li><a href='../PHP/logout.php'><span class='glyphicon glyphicon-user'> </span>".$_SESSION['user'][0].":  Cerrar Sesion</a></li>";
                         }
                         ?>
                     </ul>

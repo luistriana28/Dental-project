@@ -1,10 +1,8 @@
 <?php
 session_start();
-if(!isset($_SESSION['usuario']))
-{
-header('Location: loginmedicos.php');
+if (empty($_SESSION["user"])) {
+header("Location:../index.php");
 }
-echo "<p align='right'>"."<a href='logoutmedicos.php'>[Cerrar Sesión]</a></p>";
 ?>
 <html>
     <head>
@@ -17,6 +15,31 @@ echo "<p align='right'>"."<a href='logoutmedicos.php'>[Cerrar Sesión]</a></p>";
         <link rel="stylesheet" type="text/css" href="../Estilos/estilopagina.css">
     </head>
     <body>
+        <nav class="navbar navbar-default fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dental Torreon</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="Editar.php">Inicio</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php
+                        if(isset($_SESSION['user']))
+                        {
+                        echo "<li><a href='../PHP/logout.php'><span class='glyphicon glyphicon-user'> </span>".$_SESSION['user'][0].":  Cerrar Sesion</a></li>";
+                        }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <center>
         <h1 id="tit">Edita Receta</h1>
         <?php
@@ -45,9 +68,6 @@ echo "</tr>";
 }
 echo "</table>";
 ?>
-<br />
-<img src="img/dientelimpio.png"/><br />
-<a href="Editar.php">Regresar</a></center>
-
+</center>
 </body>
 </html>

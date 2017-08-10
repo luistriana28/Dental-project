@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (empty($_SESSION["user"])) {
+header("Location:../index.php");
+}
+?>
 <html>
     <head>
         <title>Buscar Medico</title>
@@ -9,17 +15,31 @@
         <link rel="stylesheet" type="text/css" href="../Estilos/estilopagina.css">
     </head>
     <body>
-        <?php
-        session_start();
-        if(isset($_SESSION['user']))
-        {
-        echo "<p align='right'>Usuario: ".$_SESSION['user']."</br><a href='logoutmedicos.php'>Cerrar Sesion</a></p>";
-        }
-        else
-        {
-        echo "<p align='right'><a href='login.php'>Login</a></p>";
-        }
-        ?>
+        <nav class="navbar navbar-default fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dental Torreon</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="Buscar.php">Inicio</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php
+                        if(isset($_SESSION['user']))
+                        {
+                        echo "<li><a href='../PHP/logout.php'><span class='glyphicon glyphicon-user'> </span>".$_SESSION['user'][0].":  Cerrar Sesion</a></li>";
+                        }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <center><h3 id="tit">Buscar Medico por Especialidad</h3>
         <fieldset id="feel">
             <form method="post">
@@ -79,9 +99,5 @@
         }
         ?>
         </center>
-        <br />
-        <center><img src="img/dientelimpio.png"/><br />
-        <a href="buscar.php">Regresar</a></center>
-        
     </body>
 </html>

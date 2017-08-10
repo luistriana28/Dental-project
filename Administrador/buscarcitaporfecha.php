@@ -1,12 +1,7 @@
 <?php
 session_start();
-if(isset($_SESSION['user']))
-{
-echo "<p align='right'>Usuario: ".$_SESSION['user']."</br><a href='logoutmedicos.php'>Cerrar Sesion</a></p>";
-}
-else
-{
-echo "<p align='right'><a href='login.php'>Login</a></p>";
+if (empty($_SESSION["user"])) {
+header("Location:../index.php");
 }
 ?>
 <html>

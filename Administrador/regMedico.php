@@ -1,6 +1,8 @@
 <?php
 session_start();
-if(isset($_SESSION['user']))
+if (empty($_SESSION["user"])) {
+header("Location:../index.php");
+}
 ?>
 <html>
     <head>
@@ -31,7 +33,7 @@ if(isset($_SESSION['user']))
                         <?php
                         if(isset($_SESSION['user']))
                         {
-                        echo "<li><a href='../index.php'><span class='glyphicon glyphicon-user'></span> Cerrar Sesion</a></li>";
+                        echo "<li><a href='../PHP/logout.php'><span class='glyphicon glyphicon-user'> </span>".$_SESSION['user'][0].":  Cerrar Sesion</a></li>";
                         }
                         ?>
                     </ul>

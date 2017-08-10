@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (empty($_SESSION["user"])) {
+header("Location:../index.php");
+}
 ?>
 <html>
     <head>
@@ -30,7 +33,7 @@ session_start();
                         <?php
                         if(isset($_SESSION['user']))
                         {
-                        echo "<li><a href='../index.php'><span class='glyphicon glyphicon-user'></span> Cerrar Sesion</a></li>";
+                        echo "<li><a href='../PHP/logout.php'><span class='glyphicon glyphicon-user'> </span>".$_SESSION['user'][0].":  Cerrar Sesion</a></li>";
                         }
                         ?>
                     </ul>
@@ -42,15 +45,15 @@ session_start();
             <div class="row">
                 <div class="col-xs-12">
                     <p>
-                        <a href="administra_medicos.php" class="btn btn-sq-lg btn-primary">
+                        <a href="elMedico.php" class="btn btn-sq-lg btn-primary">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Medico
                         </a>
-                        <a href="administra_proveedores.php" class="btn btn-sq-lg btn-success">
+                        <a href="elProveedor.php" class="btn btn-sq-lg btn-success">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Proveedor
                         </a>
-                        <a href="administra_personas.php" class="btn btn-sq-lg btn-info">
+                        <a href="elPaciente.php" class="btn btn-sq-lg btn-info">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Paciente
                         </a>
@@ -66,15 +69,15 @@ session_start();
             <div class="row">
                 <div class="col-xs-12">
                     <p>
-                        <a href="administra_medicos.php" class="btn btn-sq-lg btn-warning">
+                        <a href="elTipoDeServicio.php" class="btn btn-sq-lg btn-warning">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Servicio
                         </a>
-                        <a href="administra_proveedores.php" class="btn btn-sq-lg btn-danger">
+                        <a href="elTratamiento.php" class="btn btn-sq-lg btn-danger">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Tratamiento
                         </a>
-                        <a href="administra_personas.php" class="btn btn-sq-lg btn-success">
+                        <a href="elReceta.php" class="btn btn-sq-lg btn-success">
                             <i class="fa fa-user fa-5x"></i><br/>
                             Receta
                         </a>
