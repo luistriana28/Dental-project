@@ -1,22 +1,45 @@
 <?php
 session_start();
-if(isset($_SESSION['usuario']))
-{
-echo "<p align='right'>Usuario: ".$_SESSION['usuario']."</br><a href='logoutmedicos.php'>Cerrar Sesion</a></p>";
-}
-else
-{
-echo "<p align='right'><a href='login.php'>Login</a></p>";
+if (empty($_SESSION["user"])) {
+header("Location:../index.php");
 }
 ?>
 <html>
     <head>
-        <title>Buscar Receta</title>
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <title>Buscar Receta por Paciente</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap/css/font-awesome.min.css">
         <script src="bootstrap/query/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="estilopagina.css">
+        <link rel="stylesheet" type="text/css" href="../Estilos/estilopagina.css">
     </head>
+    <body>
+        <nav class="navbar navbar-default fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dental Torreon</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="inicioMedico.php">Inicio</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php
+                        if(isset($_SESSION['user']))
+                        {
+                        echo "<li><a href='../PHP/logout.php'><span class='glyphicon glyphicon-user'> </span>".$_SESSION['user'][0].":  Cerrar Sesion</a></li>";
+                        }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     <body>
         <center>
         <h3 id="tit">Buscar Receta Por Paciente</h3>
@@ -74,9 +97,5 @@ echo "<p align='right'><a href='login.php'>Login</a></p>";
         }
         ?>
         </center>
-        <br />
-        <center><img src="img/dientelimpio.png"/><br />
-        <a href="buscarM.php">Regresar</font></a></center>
-        
     </body>
 </html>

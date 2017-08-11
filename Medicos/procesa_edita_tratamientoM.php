@@ -1,12 +1,4 @@
-<html>
-<head>
-<title>EDICION TRATAMIENTO</title>
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-        <script src="bootstrap/query/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="estilopagina.css">
-</head>
-<body>
+
 <?php
 $conexion=mysqli_connect("localhost","root","","dentaltorreon") or die("Problemas en la conexion");
 mysqli_query($conexion,"update tratamiento
@@ -19,6 +11,3 @@ echo "<font color='white'>El Tratamiento fue modificado con exito.</font>";
 header('refresh:2;url=administra_tratamientoM.php')
 
 ?>
-
-</body>
-</html>

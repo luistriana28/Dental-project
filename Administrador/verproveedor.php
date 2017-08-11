@@ -45,15 +45,13 @@ header("Location:../index.php");
     $dental=mysqli_connect("localhost","root") or die ("Problemas con la conexion");
     mysqli_select_db($dental,"dentaltorreon") or die ("Problemas en la seleccion de la base de datos");
     echo "<table border='1' bgcolor='silver'>";
-      echo "<tr><td>Representante</td><td>Direccion</td><td>Telefono</td><td>Fecha</td><td>Marca</td><td>Mercancia</td></tr>";
+      echo "<tr><td>Representante</td><td>Direccion</td><td>Marca</td><td>Mercancia</td></tr>";
       $registro=mysqli_query($dental,"select * from provedor") or die ("Problemas con el select".mysqli_error());
       while ($reg=mysqli_fetch_array($registro))
       {
       echo $fila="<tr>";
         echo $fila="<td>".$reg['representante']."</td>";
         echo $fila="<td>".$reg['direccion']."</td>";
-        echo $fila="<td>".$reg['telefono']."</td>";
-        echo $fila="<td>".$reg['fecha']."</td>";
         echo $fila="<td>".$reg['marca']."</td>";
         echo $fila="<td>".$reg['mercancia']."</td></tr>";
         

@@ -1,20 +1,45 @@
 <?php
 session_start();
-if(!isset($_SESSION['usuario']))
-{
-header('Location: loginmedicos.php');
+if (empty($_SESSION["user"])) {
+header("Location:../index.php");
 }
-echo "<p align='right'>"."<a href='logoutmedicos.php'>[Cerrar Sesión]</a></p>";
 ?>
 <html>
-  <head>
-    <title>Modificacion de Pacientes</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/query/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="estilopagina.css">
-  </head>
-  <body>
+    <head>
+        <title>Modifica Paciente</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap/css/font-awesome.min.css">
+        <script src="bootstrap/query/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../Estilos/estilopagina.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dental Torreon</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="EditarM.php">Inicio</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php
+                        if(isset($_SESSION['user']))
+                        {
+                        echo "<li><a href='../PHP/logout.php'><span class='glyphicon glyphicon-user'> </span>".$_SESSION['user'][0].":  Cerrar Sesion</a></li>";
+                        }
+                        ?>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     <center>
     <?php
     $conex=mysqli_connect("localhost","root","","dentaltorreon") or
@@ -55,10 +80,6 @@ echo "<p align='right'>"."<a href='logoutmedicos.php'>[Cerrar Sesión]</a></p>";
       header("refresh: 2; url = administra_personasM.php");
         }
       mysqli_close($conex);
-      ?>
-      <br />
-      <img src="img/dientelimpio.png"/><br />
-      <a href="administra_personasM.php">Regresar</a> </center>
-      
+      ?></center>
     </body>
   </html>

@@ -23,7 +23,7 @@ session_start();
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Inicio</a></li>
+                        <li class="active"><a href="inicioMedicos.php">Inicio</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <?php
@@ -64,9 +64,5 @@ session_start();
                 </tbody>
             </table>
         </div>
-        <center>
-        <img src="../img/dientelimpio.png"/><br />
-        <a href="../Medicos/inicioMedicos.php" >Regresar</a>
-        </center>
     </body>
 </html>
